@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "start:docs": "npx styleguidist server",
-    "build": "cross-env NODE_ENV=production babel ./src --out-dir ./build --ignore \"**/*.md\"",
+    "build": "rimraf build && cross-env NODE_ENV=production babel ./src --out-dir ./build --ignore \"**/App.js\",\"**/*.md\"",
     "release": "yarn build && npm publish --access=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

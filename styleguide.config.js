@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       name: 'UI Components',
-      components: 'src/components/**/[A-Z]*.js',
+      components: 'src/**/[A-Z]*.js',
       exampleMode: 'expand',
       usageMode: 'expand',
     },
